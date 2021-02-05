@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1= title
+  p Click on generate PDF link to Generate PDF using NodeJS and Express
+  table.table.table-hover.table-striped.table-bordered
+    thead
+      tr
+        th #
+        th Title
+        th Author
+        th Action
+    tbody
+    - for (var i = 0; i < news.length; ++i) {
+       tr
+         th(scope='row') #{i+1}
+         td #{news[i]['title']}
+         td #{news[i]['author_name']}
+         td
+          a(href="/pdf?id="+news[i]['id'])
+           | Generate PDF
+    - }

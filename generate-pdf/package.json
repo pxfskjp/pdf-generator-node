@@ -1,0 +1,19 @@
+{
+  "name": "generate-pdf-using-nodejs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "blob-stream": "^0.1.3",
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "morgan": "~1.7.0",
+    "pdfkit": "^0.8.3",
+    "pug": "~2.0.0-beta10",
+    "serve-favicon": "~2.3.2"
+  }
+}
